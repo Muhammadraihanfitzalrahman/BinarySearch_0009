@@ -20,8 +20,8 @@ void input()
         {
             cout << "\nJumlah elemen tidak boleh lebih dari 10. Silakan coba lagi.\n";
         }
-   
     }
+
     cout << "==============================" << endl;
     cout << "Masukkan Elemen Array" << endl;
     cout << "==============================" << endl;
@@ -79,13 +79,12 @@ void binarySearch()
         int item;
         cout << "Masukkan elemen yang ingin dicari: ";
         cin >> item;
-        
-        int item;
-        cout << "Masukkan elemen yang ingin dicari: ";
-        cin >> item;
 
         int low = 0;
-    
+        int high = n - 1;
+
+        do
+        {
             int mid = (low + high) / 2;
 
             if (elemen[mid] == item)
@@ -101,4 +100,13 @@ void binarySearch()
             {
                 low = mid + 1;
             }
+        } while (low <= high);
+
+        cout << "\nMaaf! Elemen " << item << " tidak ditemukan dalam array.\n";
+
+        cout << "\nIngin mencari lagi? (y/n): ";
+        cin >> ulang;
+
+    } while (ulang == 'y' || ulang == 'Y');
+}
 
