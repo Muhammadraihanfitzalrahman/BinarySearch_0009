@@ -118,4 +118,4 @@ void binarySearch()
 }
 
 int main() {
-
+    input();
