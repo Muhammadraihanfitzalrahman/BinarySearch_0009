@@ -85,3 +85,7 @@ void binarySearch()
         int low = 0;
         int high = nPanjang - 1;
         bool ditemukan = false;
+
+        while (low <= high)
+        {
+            int mid = (low + high) / 2;
