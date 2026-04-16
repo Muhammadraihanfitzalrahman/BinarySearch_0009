@@ -39,8 +39,10 @@ void bubbleSortArray()
     int temp;
     do
     {
-        for (int j = 0; j < nPanjang - pass; j++) {
-            if (element[j] > element[j + 1]) {
+        for (int j = 0; j < nPanjang - pass; j++)
+        {
+            if (element[j] > element[j + 1])
+            {
                 // swap
                 temp = element[j];
                 element[j] = element[j + 1];
@@ -51,23 +53,28 @@ void bubbleSortArray()
     } while (pass <= nPanjang - 1);
 }
 
-void display() {
+void display()
+{
     cout << "\n===========================\n";
     cout << " Element Array Setelah Diurutkan (Asc)\n";
     cout << "===========================\n";
 
-    for (int j = 0; j < nPanjang; j++) {
+    for (int j = 0; j < nPanjang; j++)
+    {
         cout << element[j];
-        if (j < nPanjang - 1) {
+        if (j < nPanjang - 1)
+        {
             cout << " -> ";
         }
     }
     cout << endl;
 }
 
-void binarySearch() {
+void binarySearch()
+{
     char ulang;
-
-
-
-
+    do
+    {
+        cout << "\n============================================\n";
+        cout << "         Pencarian Binary Search\n";
+        cout << "============================================\n";
